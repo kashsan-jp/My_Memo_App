@@ -1,0 +1,8 @@
+The Perfect Advanced React/TypeScript Project - Markdown Supported Note Taking With Categories
+Web Dev Simplified
+https://www.youtube.com/watch?v=j898RGRw0b4&t=695s
+
+npm i react-bootstrap bootstrap react-router-dom
+npm i react-select
+npm i uuid
+npm i react-markdown
