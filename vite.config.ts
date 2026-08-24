@@ -6,28 +6,29 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      devOptions: { enabled: true },
-      manifest: {
-        name: "ぷちメモ",
-        icons: [
-          {
-            sizes: "192x192",
-            src: "192_petit_memo.png",
-            type: "image/png",
-          },    
-          {
-            sizes: "512x512",
-            src: "512_petit_memo.png",
-            type: "image/png",
-          },
-          {
-            sizes: "512x512",
-            src: "512_petit_memo.png",
-            type: "image/png",
-            purpose: "maskable",
-          },
-        ],
-      },
+      registerType: 'autoUpdate'
+      // devOptions: { enabled: true },
+      // manifest: {
+      //   name: "ぷちメモ",
+      //   icons: [
+      //     {
+      //       sizes: "192x192",
+      //       src: "192_petit_memo.png",
+      //       type: "image/png",
+      //     },    
+      //     {
+      //       sizes: "512x512",
+      //       src: "512_petit_memo.png",
+      //       type: "image/png",
+      //     },
+      //     {
+      //       sizes: "512x512",
+      //       src: "512_petit_memo.png",
+      //       type: "image/png",
+      //       purpose: "maskable",
+      //     },
+      //   ],
+      // },
     }),
   ],
 });
