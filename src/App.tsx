@@ -11,6 +11,7 @@ import { NoteLayout } from "./NoteLayout"
 import { Note } from "./Note"
 import { EditNote } from "./EditNote"
 
+
 export type Note = {
   id: string
 } & NoteData

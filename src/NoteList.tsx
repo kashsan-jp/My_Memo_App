@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ReactSelect from "react-select";
 import type { Tag } from "./App";
 import styles from "./NoteList.module.css";
+import { CiMemoPad } from "react-icons/ci";
 
     type SimplifiedNote = {
         tags: Tag[]
@@ -46,7 +47,7 @@ export function NoteList({availableTags, notes, onUpdateTag, onDeleteTag}: NoteL
     return (
         <>
             <Row className="align-items-center mb-4" >
-                <Col><h1>MY予定</h1></Col>
+                <Col><h1>ぷちメモ</h1><h2><CiMemoPad size={30} color="blue"/></h2></Col>
                 <Col xs="auto">
                    <Stack gap={2} direction="horizontal">
                         <Link to="/new">
@@ -65,7 +66,7 @@ export function NoteList({availableTags, notes, onUpdateTag, onDeleteTag}: NoteL
                <Row className="mb-4">
                    <Col>
                         <Form.Group controlId="title">
-                            <Form.Label>Title</Form.Label>
+                            <Form.Label>Search</Form.Label>
                             <Form.Control 
                                 type="text" 
                                 value={title} 
@@ -75,7 +76,7 @@ export function NoteList({availableTags, notes, onUpdateTag, onDeleteTag}: NoteL
                    </Col>
                     <Col>
                         <Form.Group controlId="tags">
-                            <Form.Label>Tags</Form.Label>
+                            <Form.Label>Tags Search</Form.Label>
                             <ReactSelect
                                 value={selectedTags.map(tag => {
                                     return { label: tag.label, value: tag.id} 
