@@ -8,7 +8,7 @@ export default defineConfig({
     react(),
     VitePWA({ 
       registerType: 'autoUpdate',
-      includeAssets: ['assets/favicon.ico'],
+      // includeAssets: ['assets/favicon.ico'],
       manifest: {
       name: 'ぷちメモ',
       short_name: 'petit_memo',
