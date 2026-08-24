@@ -6,3 +6,5 @@ npm i react-bootstrap bootstrap react-router-dom
 npm i react-select
 npm i uuid
 npm i react-markdown
+
+npm install -D vite-plugin-pwa
