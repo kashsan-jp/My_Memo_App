@@ -40,7 +40,7 @@ export function NoteForm({
         <Form onSubmit={handleSubmit}>
             <Stack gap={4}>
                 <Row>
-                    <Col>
+                    <Col className="">
                         <Form.Group controlId="title">
                             <Form.Label>Title</Form.Label>
                             <Form.Control 
@@ -80,12 +80,13 @@ export function NoteForm({
                             ref={markdownRef} 
                             required 
                             as="textarea" 
-                            rows={15}
+                            rows={5}
                             defaultValue={markdown}
+                            className="fs-5"
                         />
                 </Form.Group>
                 <Stack direction="horizontal" gap={2} className="justify-content-end">
-                    <Button type="submit" variant="outline-primary">Save</Button>
+                    <Button type="submit" variant="outline-success">Save</Button>
                     <Link to="..">
                         <Button type="button" variant="outline-secondary">Cancel</Button>
                     </Link>

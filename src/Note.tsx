@@ -25,7 +25,7 @@ export function Note({onDelete}: NoteProps) {
                         <Badge className="text-truncate" key={tag.id}>
                             {tag.label}
                         </Badge>
-                    ))}
+                    ))} 
                 </Stack>
 
             )}
@@ -33,7 +33,7 @@ export function Note({onDelete}: NoteProps) {
         <Col xs="auto">
             <Stack gap={2} direction="horizontal">
                 <Link to={`/${note.id}/edit`}>
-                    <Button variant="primary">Edit</Button>
+                    <Button variant="success">Edit</Button>
                 </Link>
                 <Button 
                     variant="outline-danger"
