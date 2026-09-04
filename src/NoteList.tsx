@@ -51,7 +51,7 @@ export function NoteList({availableTags, notes, onUpdateTag, onDeleteTag}: NoteL
                 <Col xs="auto">
                    <Stack gap={2} direction="horizontal">
                         <Link to="/new">
-                            <Button variant="primary">Create</Button>
+                            <Button variant="success">Create</Button>
                         </Link>
                         <Button 
                             variant="outline-secondary"
@@ -120,7 +120,7 @@ function NoteCard({id, title, tags}: SimplifiedNote) {
                 {tags.length > 0 && (
                     <Stack gap={1} direction="horizontal" className="justify-content-center flex-wrap">
                         {tags.map(tag => (
-                            <Badge className="text-truncate" key={tag.id}>
+                            <Badge bg="success" className="text-truncate" key={tag.id}>
                                 {tag.label}
                             </Badge>
                         ))}

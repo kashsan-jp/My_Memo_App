@@ -22,7 +22,7 @@ export function Note({onDelete}: NoteProps) {
                     className="flex-wrap"
                 >
                     {note.tags.map(tag => (
-                        <Badge className="text-truncate" key={tag.id}>
+                        <Badge bg="success" className="text-truncate" key={tag.id}>
                             {tag.label}
                         </Badge>
                     ))} 
@@ -30,7 +30,7 @@ export function Note({onDelete}: NoteProps) {
 
             )}
         </Col>
-        <Col xs="auto">
+        <Col xs="auto" className="mt-3">
             <Stack gap={2} direction="horizontal">
                 <Link to={`/${note.id}/edit`}>
                     <Button variant="success">Edit</Button>
@@ -52,6 +52,6 @@ export function Note({onDelete}: NoteProps) {
     </Row>
     <ReactMarkdown>
         {note.markdown}
-    </ReactMarkdown>
+    </ReactMarkdown>    
     </>
 }
