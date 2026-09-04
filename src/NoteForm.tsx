@@ -47,6 +47,7 @@ export function NoteForm({
                                 ref={titleRef} 
                                 required
                                 defaultValue={title}
+                                className="fs-6"
                             />
                             </Form.Group>
                     </Col>
@@ -70,7 +71,9 @@ export function NoteForm({
                                         return { label: tag.label, id: tag.value}
                                     }))
                                 }}
-                                isMulti/>
+                                isMulti
+                                className="fs-6"
+                                />
                         </Form.Group>
                     </Col>
                 </Row>
