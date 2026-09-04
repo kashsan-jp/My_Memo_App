@@ -37,7 +37,7 @@ export function NoteForm({
     }
 
     return (
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} >
             <Stack gap={4}>
                 <Row>
                     <Col className="">
@@ -89,7 +89,7 @@ export function NoteForm({
                         />
                 </Form.Group>
                 <Stack direction="horizontal" gap={2} className="justify-content-end">
-                    <Button type="submit" variant="outline-success">Save</Button>
+                    <Button type="submit" variant="success">Save</Button>
                     <Link to="..">
                         <Button type="button" variant="outline-secondary">Cancel</Button>
                     </Link>
